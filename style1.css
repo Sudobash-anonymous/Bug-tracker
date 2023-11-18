@@ -1,0 +1,136 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    --black:#17181a;
+    --borderblack:#242528;
+    --blue:#9ca6c9;
+    --white:#ffffff;
+    --aqua:#00FFFF;
+    --Lime:#00ff00;
+}
+body{
+    background-color: var(--aqua);
+}
+#container{
+    width: 100%;
+    height: 100vh;
+}
+#container > #leftContainer{
+    background-color: var(--black);
+    height: auto;
+    color: var(--Lime);
+    width: 30%;
+    padding: 10px;
+    float: left;
+}
+#container > #leftContainer > #issueContainer{
+    margin: 100px auto;
+}
+#container > #leftContainer > #issueContainer > input{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+    border:1px solid var(--borderblack);
+    background-color: var(--black);
+    color: var(--red);
+    padding: 10px;
+}
+#container > #leftContainer > #issueContainer > select{
+    width: 300px;
+    height: 40px;
+    background-color: var(--black);
+    outline: none;
+    border:1px solid var(--borderblack);
+    color: var(--red);
+}
+#container > #leftContainer > #issueContainer > #title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+#container > #leftContainer > #issueContainer > #title2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#container > #leftContainer > #issueContainer > input,#container > #leftContainer > #issueContainer > select{
+    margin: 10px 0px;
+}
+#container > #leftContainer > #issueContainer > button{
+    width: 55px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font: 10px;
+    background-color: var(--red);
+    cursor: pointer;
+}
+#container > #leftContainer > #issueContainer > button:hover{
+    background-color: var(--Lime);
+}
+#container > #rightContainer{
+    height: 100vh;
+    width: 70%;
+    background-color:var(--red);
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+#container > #rightContainer > #issue{
+    width: 250px;
+    height: 250px;
+    background-color: var(--black);
+    margin: 15px;
+    transition: 0.07s ease-in-out;
+}
+#container > #rightContainer > #issue:hover{
+    transform: scale(1.05);
+}
+#container > #rightContainer > #issue > #sign{
+    background-color: var(--blue);
+    color: var(--black);
+    width: 70px;
+    height: 20px;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+#container > #rightContainer > #issue > #issuename{
+    margin: 30px 20px;
+    font-size: 30px;
+    word-wrap: break-word;
+    text-align: center;
+    color: var(--darkred);
+    text-transform: capitalize;
+
+}
+#container > #rightContainer > #issue > #issueseverity,
+#container > #rightContainer > #issue > #issueassign{
+    margin-top: 1px;
+    margin-left: 10px;
+    color: var(--blue);
+}
+#container > #rightContainer > #issue > button{
+    margin-top: 25px;
+    margin-left: 30px;
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+#container > #rightContainer > #issue > #close{
+    background-color: rgb(174, 174, 0);
+    border: 1px solid rgb(255, 255, 41);
+}
+#container > #rightContainer > #issue > #delete{
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgb(255, 47, 0);
+}
